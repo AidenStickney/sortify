@@ -3,6 +3,7 @@ import { getSortedTracks } from "../utils/sort";
 import { updatePlaylist, fetchBpm } from "../utils/requests";
 import { selectPlaylist } from "../utils/helpers";
 import { DescIcon, AscIcon, ScrollToBottom } from "../components/icons";
+import { FaGithub } from 'react-icons/fa';
 import TracksTable from "../components/TracksTable";
 
 export default function Page() {
@@ -149,6 +150,14 @@ export default function Page() {
                     <h2 className="text-lg text-center font-bold mt-2 line-clamp-1">{playlist.name}</h2>
                   </div>
                 ))}
+                {
+                  playlists.length === 0 && (
+                    <div className="flex flex-col items-center justify-center">
+                      <h1 className="text-center font-semibold text-4xl mb-3">No Playlists Found</h1>
+                      <h2 className="text-center font-semibold text-2xl mb-3">Create a playlist on Spotify to get started!</h2>
+                    </div>
+                  )
+                }
               </div>
         {
           selectedPlaylistTracks.length > 0 && (
@@ -183,7 +192,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="flex flex-col justify-center items-center text-center h-screen w-full">
-          <h1 className="text-5xl font-semibold pb-5">Spotify Playlist Organizer</h1>
+          <h1 className="text-5xl font-semibold pb-5">Sortify</h1>
           <button 
             className="bg-primary hover:bg-opacity-80 text-white font-bold py-2 px-4 rounded shadow mt-4 mb-2"
             onClick={() => window.location.href="/api/login"}
@@ -192,6 +201,19 @@ export default function Page() {
           </button>
         </div>
       )}
+			<FaGithub
+				onClick={() =>
+					window.open(
+						'https://github.com/AidenStickney/sortify'
+					)
+				}
+        className="fixed bottom-0 left-0 mb-11 ml-2 cursor-pointer h-7 w-7"
+			/>
+      <img
+				src="/Spotify_Icon_RGB_White.png"
+        className="fixed bottom-0 left-0 mb-2 ml-2 cursor-pointer h-7 w-7"
+				onClick={() => window.open('https://open.spotify.com')}
+			/>
     <div id="bottom" className="scroll-smooth"></div>
     </div>
   );

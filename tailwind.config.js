@@ -14,7 +14,7 @@ module.exports = {
 			secondarybg: '#121212',
 			primaryaccent: '#343434',
 			secondaryaccent: '#737373',
-			primary: '#1db954',
+			primary: '#1DB954',
 		},
 	},
 };
