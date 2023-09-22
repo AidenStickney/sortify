@@ -55,6 +55,8 @@ export const updatePlaylist = async (selectedPlaylistName, selectedPlaylistTrack
           .then(response => {
               if (!response.ok) {
                   throw new Error("Failed to update playlist");
+              } else {
+                alert("Playlist successfully updated!")
               }
           });
   });
