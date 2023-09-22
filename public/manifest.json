@@ -1,0 +1,9 @@
+{
+  "name": "Spotify Playlist Organizer",
+  "short_name": "Sortify",
+  "theme_color": "#1db954",
+  "background_color": "#212121",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
+}
