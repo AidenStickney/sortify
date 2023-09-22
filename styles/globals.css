@@ -1,3 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+body {
+  font-family: 'Nunito', sans-serif;
+  /* use tailwind primary named color for background color */
+  background-color: #212121;
+  color: rgb(243, 243, 243);
+}
