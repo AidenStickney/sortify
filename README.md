@@ -1,5 +1,14 @@
 # Sortify
-  Sortify is a web application that enhances your Spotify experience by allowing you to sort your playlists based on Spotify's song metrics. With an intuitive drag-and-drop interface, you can easily reorder your playlists to match your listening preferences.
+
+![GitHub last commit](https://img.shields.io/github/last-commit/AidenStickney/sortify?style=flat-square)
+![Spotify Approval](https://img.shields.io/badge/spotify-approval%20pending-yellowgreen?style=flat-square)
+
+![Next.js](https://img.shields.io/badge/next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Spotify](https://img.shields.io/badge/Spotify-%231DB954.svg?style=for-the-badge&logo=Spotify&logoColor=white)
+
+
+Sortify is a web application that enhances your Spotify experience by allowing you to sort your playlists based on Spotify's song metrics. With an intuitive drag-and-drop interface, you can easily reorder your playlists to match your listening preferences.
 
 ## Features
 
